@@ -42,7 +42,7 @@ all : $(BIN)/$(TARGET)
 $(BIN)/$(TARGET): $(OBJECTS)
 	@mkdir -p $(@D)
 	@echo Linking $@
-	@$(LINKER) $(LINKER_FLAGS) $(LIB_PATHS) -o $@ $^
+	@$(LINKER) -o $@ $^ $(LINKER_FLAGS) $(LIB_PATHS)
 
 $(OBJ)/%.o : %$(SRC_EXT)
 	@mkdir -p $(@D)
