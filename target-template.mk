@@ -1,5 +1,5 @@
 # The invoked C/C++ compiler
-COMPILER 	   := gcc
+COMPILER       := gcc
 # General arguments passed to the compiler
 COMPILER_FLAGS := -Wall
 # Additional arguments for generating dependency files
